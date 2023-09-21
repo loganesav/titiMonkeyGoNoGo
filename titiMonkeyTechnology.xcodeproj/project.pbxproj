@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B901540F20B5E51B009E4AE7 /* SessionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B901540E20B5E51B009E4AE7 /* SessionConstants.swift */; };
+		B90B2A6620ADFF3700762F6E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B2A6520ADFF3700762F6E /* Button.swift */; };
+		B91848F120AFB9CB0091A8DF /* goStimulus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B91848F020AFB9CB0091A8DF /* goStimulus.mp4 */; };
+		B925360020B7CAA8001E55DB /* stopStimulus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B92535FF20B7C66E001E55DB /* stopStimulus.mp4 */; };
+		B92638362122888600875C7B /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92638352122888600875C7B /* AdminVC.swift */; };
+		B940DE0E213EF96E00FD2328 /* GoogleCloudSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B940DE0D213EF96E00FD2328 /* GoogleCloudSupport.swift */; };
+		B940DE12213EFEFE00FD2328 /* GoogleDriveSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B940DE11213EFEFE00FD2328 /* GoogleDriveSetupVC.swift */; };
+		B944CB5520BE6680009042BA /* PhaseSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944CB5420BE6680009042BA /* PhaseSelectVC.swift */; };
+		B944CB5720BE6A17009042BA /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944CB5620BE6A17009042BA /* ConfirmationVC.swift */; };
+		B960F04E2138375600AB97C3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B960F04D2138375600AB97C3 /* Errors.swift */; };
+		B96A9FCC212F22E2009E18DA /* trialSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A9FCB212F22E2009E18DA /* trialSounds.swift */; };
+		B96A9FCE212F250D009E18DA /* SubjectDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A9FCD212F250C009E18DA /* SubjectDataVC.swift */; };
+		B96A9FD0212F2726009E18DA /* negativeReinforcement.wav in Resources */ = {isa = PBXBuildFile; fileRef = B96A9FCF212F2726009E18DA /* negativeReinforcement.wav */; };
+		B96A9FD2212F272E009E18DA /* trialStartSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B96A9FD1212F272E009E18DA /* trialStartSound.wav */; };
+		B96EE26F20A3E18900F32721 /* setRealTimeThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EE26E20A3E18900F32721 /* setRealTimeThread.swift */; };
+		B97687F421444B5B00BE11D2 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = B97687F321444B5B00BE11D2 /* Scripts */; };
+		B987EE9520A6485900811004 /* startSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B987EE9420A6485900811004 /* startSound.mp3 */; };
+		B987EE9920A64B8A00811004 /* startSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B987EE9820A64B8A00811004 /* startSound.wav */; };
+		B99E499E20831A2A009E2408 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99E499D20831A2A009E2408 /* Session.swift */; };
+		B9A3647E2144C8F900C13B5C /* AdminPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A3647D2144C8F900C13B5C /* AdminPasswordVC.swift */; };
+		B9A820F5207B2CE200132DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A820F4207B2CE200132DAA /* AppDelegate.swift */; };
+		B9A820FA207B2CE200132DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A820F8207B2CE200132DAA /* Main.storyboard */; };
+		B9A820FD207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9A820FB207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodeld */; };
+		B9A820FF207B2CE300132DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A820FE207B2CE300132DAA /* Assets.xcassets */; };
+		B9A82102207B2CE300132DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A82100207B2CE300132DAA /* LaunchScreen.storyboard */; };
+		B9A8210D207B2CE300132DAA /* titiMonkeyTechnologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A8210C207B2CE300132DAA /* titiMonkeyTechnologyTests.swift */; };
+		B9A82118207B2CE300132DAA /* titiMonkeyTechnologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A82117207B2CE300132DAA /* titiMonkeyTechnologyUITests.swift */; };
+		B9AB54D82086EE7600F7542A /* SubjectSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB54D72086EE7600F7542A /* SubjectSelectVC.swift */; };
+		B9AB54DE2087832100F7542A /* ReadWriteFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB54DD2087832100F7542A /* ReadWriteFileManager.swift */; };
+		B9BB3BCC2125140300112EC8 /* shrinkingGoSignalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB3BCB2125140300112EC8 /* shrinkingGoSignalVC.swift */; };
+		B9D4E61520A375BA0021CE9B /* precisionTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4E61420A375BA0021CE9B /* precisionTimer.swift */; };
+		B9D5ABBA207C1550005515DA /* clickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9D5ABB9207C1550005515DA /* clickSound.mp3 */; };
+		B9DF73402083CD2F00DB837D /* Trial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF733F2083CD2F00DB837D /* Trial.swift */; };
+		B9DFBE98207F92880038DCA1 /* SessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFBE97207F92880038DCA1 /* SessionVC.swift */; };
+		B9DFBE9E207FA23A0038DCA1 /* clickSound.caf in Resources */ = {isa = PBXBuildFile; fileRef = B9DFBE9D207FA2390038DCA1 /* clickSound.caf */; };
+		B9E3BD6B2091842D00367949 /* dateTimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3BD6A2091842D00367949 /* dateTimeStamp.swift */; };
+		B9EAC1AE20AA3E4400C98BE6 /* startSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B9EAC1AD20AA3E4400C98BE6 /* startSound.m4a */; };
+		FC5A275D27E12501002E2FDE /* Pods_titiMonkeyTechnology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815B5ED77C31A18EF38DD9E6 /* Pods_titiMonkeyTechnology.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9A82109207B2CE300132DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9A820E9207B2CE200132DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A820F0207B2CE200132DAA;
+			remoteInfo = titiMonkeyTechnology;
+		};
+		B9A82114207B2CE300132DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9A820E9207B2CE200132DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A820F0207B2CE200132DAA;
+			remoteInfo = titiMonkeyTechnology;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47EFFCC2135355C5E62DC55A /* Pods-titiMonkeyTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-titiMonkeyTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-titiMonkeyTechnology/Pods-titiMonkeyTechnology.release.xcconfig"; sourceTree = "<group>"; };
+		815B5ED77C31A18EF38DD9E6 /* Pods_titiMonkeyTechnology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_titiMonkeyTechnology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B901540E20B5E51B009E4AE7 /* SessionConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionConstants.swift; sourceTree = "<group>"; };
+		B90B2A6520ADFF3700762F6E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		B91848F020AFB9CB0091A8DF /* goStimulus.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = goStimulus.mp4; sourceTree = "<group>"; };
+		B92535FF20B7C66E001E55DB /* stopStimulus.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = stopStimulus.mp4; sourceTree = "<group>"; };
+		B92638352122888600875C7B /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		B940DE0D213EF96E00FD2328 /* GoogleCloudSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudSupport.swift; sourceTree = "<group>"; };
+		B940DE11213EFEFE00FD2328 /* GoogleDriveSetupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveSetupVC.swift; sourceTree = "<group>"; };
+		B944CB5420BE6680009042BA /* PhaseSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseSelectVC.swift; sourceTree = "<group>"; };
+		B944CB5620BE6A17009042BA /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		B960F04D2138375600AB97C3 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B960F04F21387BBF00AB97C3 /* titiMonkeyTechnology.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = titiMonkeyTechnology.entitlements; sourceTree = "<group>"; };
+		B96A9FCB212F22E2009E18DA /* trialSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trialSounds.swift; sourceTree = "<group>"; };
+		B96A9FCD212F250C009E18DA /* SubjectDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectDataVC.swift; sourceTree = "<group>"; };
+		B96A9FCF212F2726009E18DA /* negativeReinforcement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = negativeReinforcement.wav; sourceTree = "<group>"; };
+		B96A9FD1212F272E009E18DA /* trialStartSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = trialStartSound.wav; sourceTree = "<group>"; };
+		B96EE26E20A3E18900F32721 /* setRealTimeThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setRealTimeThread.swift; sourceTree = "<group>"; };
+		B97687F321444B5B00BE11D2 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		B987EE9420A6485900811004 /* startSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startSound.mp3; sourceTree = "<group>"; };
+		B987EE9820A64B8A00811004 /* startSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = startSound.wav; sourceTree = "<group>"; };
+		B99E499D20831A2A009E2408 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B9A3647D2144C8F900C13B5C /* AdminPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPasswordVC.swift; sourceTree = "<group>"; };
+		B9A820F1207B2CE200132DAA /* titiMonkeyTechnology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = titiMonkeyTechnology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A820F4207B2CE200132DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9A820F9207B2CE200132DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9A820FC207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = titiMonkeyTechnology.xcdatamodel; sourceTree = "<group>"; };
+		B9A820FE207B2CE300132DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9A82101207B2CE300132DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9A82103207B2CE300132DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9A82108207B2CE300132DAA /* titiMonkeyTechnologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = titiMonkeyTechnologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A8210C207B2CE300132DAA /* titiMonkeyTechnologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titiMonkeyTechnologyTests.swift; sourceTree = "<group>"; };
+		B9A8210E207B2CE300132DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9A82113207B2CE300132DAA /* titiMonkeyTechnologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = titiMonkeyTechnologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A82117207B2CE300132DAA /* titiMonkeyTechnologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titiMonkeyTechnologyUITests.swift; sourceTree = "<group>"; };
+		B9A82119207B2CE300132DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9AB54D72086EE7600F7542A /* SubjectSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSelectVC.swift; sourceTree = "<group>"; };
+		B9AB54DD2087832100F7542A /* ReadWriteFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteFileManager.swift; sourceTree = "<group>"; };
+		B9BB3BCB2125140300112EC8 /* shrinkingGoSignalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = shrinkingGoSignalVC.swift; path = titiMonkeyTechnology/Controller/shrinkingGoSignalVC.swift; sourceTree = SOURCE_ROOT; };
+		B9D4E61420A375BA0021CE9B /* precisionTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = precisionTimer.swift; sourceTree = "<group>"; };
+		B9D5ABB9207C1550005515DA /* clickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clickSound.mp3; sourceTree = "<group>"; };
+		B9DF733F2083CD2F00DB837D /* Trial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trial.swift; sourceTree = "<group>"; };
+		B9DFBE97207F92880038DCA1 /* SessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionVC.swift; sourceTree = "<group>"; };
+		B9DFBE9D207FA2390038DCA1 /* clickSound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = clickSound.caf; sourceTree = "<group>"; };
+		B9E3BD6A2091842D00367949 /* dateTimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateTimeStamp.swift; sourceTree = "<group>"; };
+		B9EAC1AD20AA3E4400C98BE6 /* startSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = startSound.m4a; sourceTree = "<group>"; };
+		BD426A19CA8ACAFBA8952FF1 /* Pods-titiMonkeyTechnology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-titiMonkeyTechnology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-titiMonkeyTechnology/Pods-titiMonkeyTechnology.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9A820EE207B2CE200132DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5A275D27E12501002E2FDE /* Pods_titiMonkeyTechnology.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A82105207B2CE300132DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A82110207B2CE300132DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7039AE27E5AB85926A5E8CD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD426A19CA8ACAFBA8952FF1 /* Pods-titiMonkeyTechnology.debug.xcconfig */,
+				47EFFCC2135355C5E62DC55A /* Pods-titiMonkeyTechnology.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BB5374A007841FB0DF27877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				815B5ED77C31A18EF38DD9E6 /* Pods_titiMonkeyTechnology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B907236E2080510100BD6BC4 /* Utility-Functions */ = {
+			isa = PBXGroup;
+			children = (
+				B9180AE620AD378300F3C4B8 /* Stimuli */,
+				B9180AE720AD37AD00F3C4B8 /* Timing */,
+			);
+			path = "Utility-Functions";
+			sourceTree = "<group>";
+		};
+		B9180AE620AD378300F3C4B8 /* Stimuli */ = {
+			isa = PBXGroup;
+			children = (
+				B96A9FCB212F22E2009E18DA /* trialSounds.swift */,
+			);
+			path = Stimuli;
+			sourceTree = "<group>";
+		};
+		B9180AE720AD37AD00F3C4B8 /* Timing */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4E61420A375BA0021CE9B /* precisionTimer.swift */,
+				B96EE26E20A3E18900F32721 /* setRealTimeThread.swift */,
+				B9E3BD6A2091842D00367949 /* dateTimeStamp.swift */,
+			);
+			path = Timing;
+			sourceTree = "<group>";
+		};
+		B987EE9B20A6865500811004 /* Video-Files */ = {
+			isa = PBXGroup;
+			children = (
+				B92535FF20B7C66E001E55DB /* stopStimulus.mp4 */,
+				B91848F020AFB9CB0091A8DF /* goStimulus.mp4 */,
+			);
+			path = "Video-Files";
+			sourceTree = "<group>";
+		};
+		B99E4999208314A5009E2408 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B96A9FCD212F250C009E18DA /* SubjectDataVC.swift */,
+				B92638352122888600875C7B /* AdminVC.swift */,
+				B9AB54D72086EE7600F7542A /* SubjectSelectVC.swift */,
+				B944CB5420BE6680009042BA /* PhaseSelectVC.swift */,
+				B944CB5620BE6A17009042BA /* ConfirmationVC.swift */,
+				B9DFBE97207F92880038DCA1 /* SessionVC.swift */,
+				B9BB3BCB2125140300112EC8 /* shrinkingGoSignalVC.swift */,
+				B940DE11213EFEFE00FD2328 /* GoogleDriveSetupVC.swift */,
+				B9A3647D2144C8F900C13B5C /* AdminPasswordVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B99E499C208319C1009E2408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B99E499D20831A2A009E2408 /* Session.swift */,
+				B9DF733F2083CD2F00DB837D /* Trial.swift */,
+				B9AB54DD2087832100F7542A /* ReadWriteFileManager.swift */,
+				B901540E20B5E51B009E4AE7 /* SessionConstants.swift */,
+				B90B2A6520ADFF3700762F6E /* Button.swift */,
+				B960F04D2138375600AB97C3 /* Errors.swift */,
+				B940DE0D213EF96E00FD2328 /* GoogleCloudSupport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9A820E8207B2CE200132DAA = {
+			isa = PBXGroup;
+			children = (
+				B97687F321444B5B00BE11D2 /* Scripts */,
+				B9A820F3207B2CE200132DAA /* titiMonkeyTechnology */,
+				B9A8210B207B2CE300132DAA /* titiMonkeyTechnologyTests */,
+				B9A82116207B2CE300132DAA /* titiMonkeyTechnologyUITests */,
+				B9A820F2207B2CE200132DAA /* Products */,
+				7039AE27E5AB85926A5E8CD7 /* Pods */,
+				7BB5374A007841FB0DF27877 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9A820F2207B2CE200132DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9A820F1207B2CE200132DAA /* titiMonkeyTechnology.app */,
+				B9A82108207B2CE300132DAA /* titiMonkeyTechnologyTests.xctest */,
+				B9A82113207B2CE300132DAA /* titiMonkeyTechnologyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9A820F3207B2CE200132DAA /* titiMonkeyTechnology */ = {
+			isa = PBXGroup;
+			children = (
+				B960F04F21387BBF00AB97C3 /* titiMonkeyTechnology.entitlements */,
+				B9A820F4207B2CE200132DAA /* AppDelegate.swift */,
+				B99E4999208314A5009E2408 /* Controller */,
+				B9DF733E2083CC3500DB837D /* View */,
+				B99E499C208319C1009E2408 /* Model */,
+				B907236E2080510100BD6BC4 /* Utility-Functions */,
+				B987EE9B20A6865500811004 /* Video-Files */,
+				B9A8212B207BE00C00132DAA /* Sound-Files */,
+				B9A82103207B2CE300132DAA /* Info.plist */,
+				B9A820FB207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodeld */,
+			);
+			path = titiMonkeyTechnology;
+			sourceTree = "<group>";
+		};
+		B9A8210B207B2CE300132DAA /* titiMonkeyTechnologyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8210C207B2CE300132DAA /* titiMonkeyTechnologyTests.swift */,
+				B9A8210E207B2CE300132DAA /* Info.plist */,
+			);
+			path = titiMonkeyTechnologyTests;
+			sourceTree = "<group>";
+		};
+		B9A82116207B2CE300132DAA /* titiMonkeyTechnologyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9A82117207B2CE300132DAA /* titiMonkeyTechnologyUITests.swift */,
+				B9A82119207B2CE300132DAA /* Info.plist */,
+			);
+			path = titiMonkeyTechnologyUITests;
+			sourceTree = "<group>";
+		};
+		B9A8212B207BE00C00132DAA /* Sound-Files */ = {
+			isa = PBXGroup;
+			children = (
+				B96A9FD1212F272E009E18DA /* trialStartSound.wav */,
+				B96A9FCF212F2726009E18DA /* negativeReinforcement.wav */,
+				B9D5ABB9207C1550005515DA /* clickSound.mp3 */,
+				B987EE9420A6485900811004 /* startSound.mp3 */,
+				B987EE9820A64B8A00811004 /* startSound.wav */,
+				B9EAC1AD20AA3E4400C98BE6 /* startSound.m4a */,
+				B9DFBE9D207FA2390038DCA1 /* clickSound.caf */,
+			);
+			path = "Sound-Files";
+			sourceTree = "<group>";
+		};
+		B9DF733E2083CC3500DB837D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9A82100207B2CE300132DAA /* LaunchScreen.storyboard */,
+				B9A820F8207B2CE200132DAA /* Main.storyboard */,
+				B9A820FE207B2CE300132DAA /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9A820F0207B2CE200132DAA /* titiMonkeyTechnology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A8211C207B2CE300132DAA /* Build configuration list for PBXNativeTarget "titiMonkeyTechnology" */;
+			buildPhases = (
+				4893E65E258EA801E614367F /* [CP] Check Pods Manifest.lock */,
+				B9A820ED207B2CE200132DAA /* Sources */,
+				B9A820EE207B2CE200132DAA /* Frameworks */,
+				B9A820EF207B2CE200132DAA /* Resources */,
+				68A0F229D3BAA69E7FFAB050 /* [CP] Embed Pods Frameworks */,
+				FC2C0AD76B24F762B678311B /* [CP] Copy Pods Resources */,
+				B97687F221444B3600BE11D2 /* Set build number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = titiMonkeyTechnology;
+			packageProductDependencies = (
+			);
+			productName = titiMonkeyTechnology;
+			productReference = B9A820F1207B2CE200132DAA /* titiMonkeyTechnology.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9A82107207B2CE300132DAA /* titiMonkeyTechnologyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A8211F207B2CE300132DAA /* Build configuration list for PBXNativeTarget "titiMonkeyTechnologyTests" */;
+			buildPhases = (
+				B9A82104207B2CE300132DAA /* Sources */,
+				B9A82105207B2CE300132DAA /* Frameworks */,
+				B9A82106207B2CE300132DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9A8210A207B2CE300132DAA /* PBXTargetDependency */,
+			);
+			name = titiMonkeyTechnologyTests;
+			productName = titiMonkeyTechnologyTests;
+			productReference = B9A82108207B2CE300132DAA /* titiMonkeyTechnologyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9A82112207B2CE300132DAA /* titiMonkeyTechnologyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A82122207B2CE300132DAA /* Build configuration list for PBXNativeTarget "titiMonkeyTechnologyUITests" */;
+			buildPhases = (
+				B9A8210F207B2CE300132DAA /* Sources */,
+				B9A82110207B2CE300132DAA /* Frameworks */,
+				B9A82111207B2CE300132DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9A82115207B2CE300132DAA /* PBXTargetDependency */,
+			);
+			name = titiMonkeyTechnologyUITests;
+			productName = titiMonkeyTechnologyUITests;
+			productReference = B9A82113207B2CE300132DAA /* titiMonkeyTechnologyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9A820E9207B2CE200132DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = titiMonkeyTechnology;
+				TargetAttributes = {
+					B9A820F0207B2CE200132DAA = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					B9A82107207B2CE300132DAA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B9A820F0207B2CE200132DAA;
+					};
+					B9A82112207B2CE300132DAA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B9A820F0207B2CE200132DAA;
+					};
+				};
+			};
+			buildConfigurationList = B9A820EC207B2CE200132DAA /* Build configuration list for PBXProject "titiMonkeyTechnology" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9A820E8207B2CE200132DAA;
+			packageReferences = (
+			);
+			productRefGroup = B9A820F2207B2CE200132DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9A820F0207B2CE200132DAA /* titiMonkeyTechnology */,
+				B9A82107207B2CE300132DAA /* titiMonkeyTechnologyTests */,
+				B9A82112207B2CE300132DAA /* titiMonkeyTechnologyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9A820EF207B2CE200132DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B925360020B7CAA8001E55DB /* stopStimulus.mp4 in Resources */,
+				B97687F421444B5B00BE11D2 /* Scripts in Resources */,
+				B9DFBE9E207FA23A0038DCA1 /* clickSound.caf in Resources */,
+				B96A9FD2212F272E009E18DA /* trialStartSound.wav in Resources */,
+				B9D5ABBA207C1550005515DA /* clickSound.mp3 in Resources */,
+				B96A9FD0212F2726009E18DA /* negativeReinforcement.wav in Resources */,
+				B9A82102207B2CE300132DAA /* LaunchScreen.storyboard in Resources */,
+				B9EAC1AE20AA3E4400C98BE6 /* startSound.m4a in Resources */,
+				B9A820FF207B2CE300132DAA /* Assets.xcassets in Resources */,
+				B987EE9920A64B8A00811004 /* startSound.wav in Resources */,
+				B9A820FA207B2CE200132DAA /* Main.storyboard in Resources */,
+				B987EE9520A6485900811004 /* startSound.mp3 in Resources */,
+				B91848F120AFB9CB0091A8DF /* goStimulus.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A82106207B2CE300132DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A82111207B2CE300132DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4893E65E258EA801E614367F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-titiMonkeyTechnology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68A0F229D3BAA69E7FFAB050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-titiMonkeyTechnology/Pods-titiMonkeyTechnology-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-titiMonkeyTechnology/Pods-titiMonkeyTechnology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97687F221444B3600BE11D2 /* Set build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $SRCROOT/Scripts/set_build_number.sh;
+		};
+		FC2C0AD76B24F762B678311B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-titiMonkeyTechnology/Pods-titiMonkeyTechnology-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-titiMonkeyTechnology/Pods-titiMonkeyTechnology-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9A820ED207B2CE200132DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9E3BD6B2091842D00367949 /* dateTimeStamp.swift in Sources */,
+				B940DE0E213EF96E00FD2328 /* GoogleCloudSupport.swift in Sources */,
+				B9BB3BCC2125140300112EC8 /* shrinkingGoSignalVC.swift in Sources */,
+				B96A9FCC212F22E2009E18DA /* trialSounds.swift in Sources */,
+				B92638362122888600875C7B /* AdminVC.swift in Sources */,
+				B9A820FD207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodeld in Sources */,
+				B944CB5720BE6A17009042BA /* ConfirmationVC.swift in Sources */,
+				B9A820F5207B2CE200132DAA /* AppDelegate.swift in Sources */,
+				B90B2A6620ADFF3700762F6E /* Button.swift in Sources */,
+				B940DE12213EFEFE00FD2328 /* GoogleDriveSetupVC.swift in Sources */,
+				B96A9FCE212F250D009E18DA /* SubjectDataVC.swift in Sources */,
+				B9AB54DE2087832100F7542A /* ReadWriteFileManager.swift in Sources */,
+				B9A3647E2144C8F900C13B5C /* AdminPasswordVC.swift in Sources */,
+				B9D4E61520A375BA0021CE9B /* precisionTimer.swift in Sources */,
+				B901540F20B5E51B009E4AE7 /* SessionConstants.swift in Sources */,
+				B960F04E2138375600AB97C3 /* Errors.swift in Sources */,
+				B944CB5520BE6680009042BA /* PhaseSelectVC.swift in Sources */,
+				B9AB54D82086EE7600F7542A /* SubjectSelectVC.swift in Sources */,
+				B9DFBE98207F92880038DCA1 /* SessionVC.swift in Sources */,
+				B99E499E20831A2A009E2408 /* Session.swift in Sources */,
+				B96EE26F20A3E18900F32721 /* setRealTimeThread.swift in Sources */,
+				B9DF73402083CD2F00DB837D /* Trial.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A82104207B2CE300132DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A8210D207B2CE300132DAA /* titiMonkeyTechnologyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A8210F207B2CE300132DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A82118207B2CE300132DAA /* titiMonkeyTechnologyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9A8210A207B2CE300132DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9A820F0207B2CE200132DAA /* titiMonkeyTechnology */;
+			targetProxy = B9A82109207B2CE300132DAA /* PBXContainerItemProxy */;
+		};
+		B9A82115207B2CE300132DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9A820F0207B2CE200132DAA /* titiMonkeyTechnology */;
+			targetProxy = B9A82114207B2CE300132DAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9A820F8207B2CE200132DAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A820F9207B2CE200132DAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9A82100207B2CE300132DAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A82101207B2CE300132DAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9A8211A207B2CE300132DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9A8211B207B2CE300132DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9A8211D207B2CE300132DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD426A19CA8ACAFBA8952FF1 /* Pods-titiMonkeyTechnology.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Y92NY6L6;
+				INFOPLIST_FILE = titiMonkeyTechnology/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UCD1.TitiMonkeyTechnology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9A8211E207B2CE300132DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47EFFCC2135355C5E62DC55A /* Pods-titiMonkeyTechnology.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Y92NY6L6;
+				INFOPLIST_FILE = titiMonkeyTechnology/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UCD1.TitiMonkeyTechnology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9A82120207B2CE300132DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Y92NY6L6;
+				INFOPLIST_FILE = titiMonkeyTechnologyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UC-Davis.titiMonkeyTechnologyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/titiMonkeyTechnology.app/titiMonkeyTechnology";
+			};
+			name = Debug;
+		};
+		B9A82121207B2CE300132DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Y92NY6L6;
+				INFOPLIST_FILE = titiMonkeyTechnologyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UC-Davis.titiMonkeyTechnologyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/titiMonkeyTechnology.app/titiMonkeyTechnology";
+			};
+			name = Release;
+		};
+		B9A82123207B2CE300132DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Y92NY6L6;
+				INFOPLIST_FILE = titiMonkeyTechnologyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UC-Davis.titiMonkeyTechnologyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = titiMonkeyTechnology;
+			};
+			name = Debug;
+		};
+		B9A82124207B2CE300132DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Y92NY6L6;
+				INFOPLIST_FILE = titiMonkeyTechnologyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UC-Davis.titiMonkeyTechnologyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = titiMonkeyTechnology;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9A820EC207B2CE200132DAA /* Build configuration list for PBXProject "titiMonkeyTechnology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A8211A207B2CE300132DAA /* Debug */,
+				B9A8211B207B2CE300132DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A8211C207B2CE300132DAA /* Build configuration list for PBXNativeTarget "titiMonkeyTechnology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A8211D207B2CE300132DAA /* Debug */,
+				B9A8211E207B2CE300132DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A8211F207B2CE300132DAA /* Build configuration list for PBXNativeTarget "titiMonkeyTechnologyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A82120207B2CE300132DAA /* Debug */,
+				B9A82121207B2CE300132DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A82122207B2CE300132DAA /* Build configuration list for PBXNativeTarget "titiMonkeyTechnologyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A82123207B2CE300132DAA /* Debug */,
+				B9A82124207B2CE300132DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9A820FB207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9A820FC207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodel */,
+			);
+			currentVersion = B9A820FC207B2CE200132DAA /* titiMonkeyTechnology.xcdatamodel */;
+			path = titiMonkeyTechnology.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B9A820E9207B2CE200132DAA /* Project object */;
+}
